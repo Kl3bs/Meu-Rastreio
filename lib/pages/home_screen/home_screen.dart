@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         var response = await TrackingController()
                             .getTranckingInformation(data);
 
-                        print(response);
+                        print(response[0].description);
                       },
                       child: Text(
                         "Rastrear",
